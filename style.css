@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  background-color: beige;
+}
+
+.font {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  background-color: rgba(255, 101, 80, 0.4);
+  opacity: 0.8;
+}
+
+h2 {
+  margin-top: -5px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.image {
+  margin-bottom: 2.5rem;
+  width: 80px;
+  height: 80px;
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.image:hover {
+  background-color: rgba(255, 101, 80, 0.4);
+  opacity: 1;
+}
+
+body {
+  width: 100vw;
+}
+
+#container {
+  display: flex;
+  width: 100vw;
+  height: 500px;
+}
+
+#chart-one {
+  display: flex;
+  width: 120rem;
+}
+
+#chart-two {
+  width: 120rem;
+}
+
+/* responsive layout */
+
+@media screen and (max-width: 1500px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 800px;
+  }
+
+  #chart-one {
+    width: 100%;
+    height: 360px;
+  }
+
+  #chart-two {
+    width: 100%;
+    height: 360px;
+  }
+}

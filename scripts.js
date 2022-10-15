@@ -185,6 +185,16 @@ const dataset = {
 };
 
 function init() {
+  let counter = 1;
+  while (counter === 1) {
+    counter++;
+    plot(
+      responseESP32,
+      dataset.smartLightConsumption,
+      dataset.dailyConsumption,
+      dataset.currentConsumption
+    );
+  }
   return setInterval(() => {
     if (responseESP32.length)
       return plot(
